@@ -1,16 +1,148 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [ 
+		
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "Home Page"
+			}
+		},
+		{
+			"path": "pages/History/history",
+			"style": {
+				"navigationBarTitleText":"Order recode" 
+			}
+		},
+		{
+			"path": "pages/Movie/movie",
+			"style": {
+				"navigationBarTitleText": "Movie stocks"
+			}
+		},
+		{
+			"path": "pages/customer/customerService",
+			"style": {
+				"navigationBarTitleText": "Customer"
+			}
+		},
+		{
+			"path": "pages/Account/myaccount",
+			"style": {
+				"navigationBarTitleText": "Individual"
+			}
+		},
+		{
+			"path": "pages/Account/recharge",
+			"style": {
+				"navigationBarTitleText": "Recharge"
+			}
+		},
+		{
+			"path": "pages/Account/cash",
+			"style": {
+				"navigationBarTitleText": "Withdrawal managment"
+			}
+		},
+		{
+			"path": "pages/Account/loadinghistory",
+			"style": {
+				"navigationBarTitleText": "Loading history "
+			}
+		},
+		{
+			"path": "pages/Account/cashWithdrawOrder",
+			"style": {
+				"navigationBarTitleText": "Withdrawal history"
+			}
+		},
+		{
+			"path": "pages/Account/password",
+			"style": {
+				"navigationBarTitleText": "Password Manager"
+			}
+		},
+		{
+			"path": "pages/Account/BindCard",
+			"style": {
+				"navigationBarTitleText": "Link Wallet address"
+			}
+		},
+
+		{
+			"path": "pages/Account/informationNotice",
+			"style": {
+				"navigationBarTitleText": "Notification"
+			}
+		},
+		{
+			"path": "pages/Account/teamList",
+			"style": {
+				"navigationBarTitleText": "Team report"
+			}
+		},
+		{
+			"path": "pages/Account/information",
+			"style": {
+				"navigationBarTitleText": "App information"
+			}
+		},
+		{
+			"path": "pages/Account/agentMode",
+			"style": {
+				"navigationBarTitleText": "Agent Mode"
+			}
+		},
+		{
+			"path": "pages/Account/vipOffer",
+			"style": {
+				"navigationBarTitleText": "Vip Offer"
+			}
+		},
+		{
+			"path": "pages/Account/login",
+			"style": {
+				"navigationBarTitleText": ""
 			}
 		}
+		
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle":"custom"
+	},
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"selectedIconPath": "/static/redhome-icon.png",
+			"iconPath": "/static/home-icon.png"
+			
+		}, {
+			"pagePath": "pages/History/history",
+			"selectedIconPath": "/static/redhistory-icon.png",
+			"iconPath": "/static/history-icon.png"
+		},{
+			"pagePath": "pages/Movie/movie",
+			"selectedIconPath": "/static/redmovie-icon.png",
+			"iconPath": "/static/movie-icon.png"
+		},{
+			"pagePath": "pages/customer/customerService",
+			"selectedIconPath": "/static/redcustomer-icon.png",
+			"iconPath": "/static/customer-icon.png"
+		},{
+			"pagePath": "pages/Account/myaccount",
+			"selectedIconPath": "/static/redcontact-icon.png",
+			"iconPath": "/static/footer-contact-icon.png"
+		}
+	]
 	}
 }
